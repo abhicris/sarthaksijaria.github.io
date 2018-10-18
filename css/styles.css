@@ -66,7 +66,6 @@ header {
 
 header ul {
 	display: inline-block;
-	/*color: #fff;*/
 	text-align: center;
 	padding: 10px;
 	margin: 0;
@@ -101,11 +100,11 @@ header.active {
 
 header.sticky {
 	position: fixed;
-	z-index: 999
+	z-index: 999;
 }
 
 #menu.active {
-	display: block
+	display: block;
 }
 
 #mobile-menu-open {
@@ -114,12 +113,12 @@ header.sticky {
 	position: fixed;
 	right: 15px;
 	top: 10px;
-	color: #3498db;
+	color: #fff;
 	font-size: 1.5em;
 	z-index: 20;
 	padding: 0 7px;
 	border-radius: 4px;
-	background: #fff
+	background: none;
 }
 
 #mobile-menu-close {
@@ -128,19 +127,19 @@ header.sticky {
 	width: 100%;
 	background: #fff;
 	font-size: 1.5em;
-	padding-right: 15px;
+	padding-right: 20px;
 	padding-top: 10px;
 	cursor: pointer;
-	color: #3498db
+	color: #9733EE;
 }
 
 #mobile-menu-close span {
 	font-size: 0.5em;
-	text-transform: uppercase
+	text-transform: uppercase;
 }
 
 #mobile-menu-close i {
-	vertical-align: middle
+	vertical-align: middle;
 }
 
 footer {
@@ -225,9 +224,15 @@ footer {
 }
 
 .btn-rounded-white:hover {
-	color: #9733EE;
-	background: #fff;
 	text-decoration: none;
+	color: #9733EE !important;
+	background: #fff;
+}
+
+.btn-rounded-white:visited {
+	text-decoration: none;
+	color: #fff;
+	border-radius: 0.4em;
 }
 
 /*.shadow {
@@ -784,11 +789,11 @@ footer {
 		top: auto
 	}
 
-	#lead-content h1 {
+	#lead-content h2 {
 		font-size: 3em
 	}
 
-	#lead-content h2 {
+	#lead-content h3 {
 		font-size: 1.75em
 	}
 
@@ -809,11 +814,11 @@ footer {
 		z-index: 999;
 		animation: none;
 		bottom: 0;
-		height: 100%
+		height: 100%;
 	}
 
 	#mobile-menu-open, #mobile-menu-close {
-		display: block
+		display: block;
 	}
 
 	#menu {
@@ -821,19 +826,30 @@ footer {
 		overflow-y: auto;
 		box-shadow: none;
 		border-radius: 0;
-		width: 100%
+		width: 100%;
+		background-color: #fff;
+		transition: 0.5s ease all;
 	}
 
 	#menu li {
 		display: block;
-		margin-bottom: 10px
+		margin-bottom: 10px;
 	}
 
-	#lead-content h1 {
-		font-size: 2em
+	#menu li a {
+		color: #9733EE;
+	}
+
+	#menu li a:hover, menu li a:active {
+		background-color: #f5f5f5;
+		border: none;
 	}
 
 	#lead-content h2 {
+		font-size: 2em
+	}
+
+	#lead-content h3 {
 		font-size: 1.3em
 	}
 
@@ -934,4 +950,26 @@ canvas {
 	font-size: 0.6em;
 	color: #616161;
 	padding: 0.4em 0.6em;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.stylize {
+	text-decoration: none;
+	color: #9733EE;
+	transition: 0.5s ease-in all;
+}
+
+.stylize:hover {
+	text-decoration: none;
+	transform: rotate(360deg);
+	transition: 0.5s ease-in all;
+}
+
+img .screens {
+	width: 100%;
 }
